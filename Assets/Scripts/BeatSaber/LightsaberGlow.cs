@@ -16,6 +16,8 @@ public class LightsaberGlow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //update line positions//
+        lineRend.SetPosition(0, startPos.position);
+        lineRend.SetPosition(1, endPos.position);
     }
 }
