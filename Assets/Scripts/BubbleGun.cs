@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(XRGrabInteractable))]
 public class BubbleGun : MonoBehaviour
 {
     XRGrabInteractable m_InteractableBase;
     Animator m_Animator;
+
+    UnityEvent activate2 = new UnityEvent();
     
     [SerializeField] ParticleSystem m_BubbleParticleSystem = null;
 
